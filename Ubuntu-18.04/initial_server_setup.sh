@@ -6,7 +6,7 @@ set -euo pipefail
 ########################
 
 # Name of the user to create and grant sudo privileges
-USERNAME=sammy
+USERNAME=august
 
 # Whether to copy over the root user's `authorized_keys` file to the new sudo
 # user.
@@ -18,6 +18,7 @@ COPY_AUTHORIZED_KEYS_FROM_ROOT=true
 #     "ssh-rsa AAAAB..."
 # )
 OTHER_PUBLIC_KEYS_TO_ADD=(
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDY34Y0p8SiyW1PNc4lf97OB904ASLpbLda3l9lLMh524ErVZxv9WHsLDto2maVXrV4LUWYEFUckz10yLaVVUVFlW7yuQ74PPT79CxaielThrmXdFR8uGz6kMBHTb8wWjUT/8nkzUL7JQRyEN4V1csAcevqPCbwoT/o6F28Aul4b9hebm7Ey2pE7dKJhGFn/0yHNB4peZBfC3tXZV/BtPjClDrZafcz97yS3NBJkeNUojg9lY2l0BGc3i/OkgtYUXQ2Ap9NntQFcjR+pYcW6hRqVud0hM0anyTPdHyfVJ3lpH6ws3VXfdudzqcN0f0BwbWmFq1PogPegOZx0FVdI8BMQUp4TmkL14F9J8P9b8ksovjP9t5sdpFs3HSHXxcOfzgdPay4k1l0YPShQDFj5BZvXthJeqf3l2N3+7vgITvd2VoFRRPlzQM8SJO7P5MREa6pCiwzcxfhiy/lCfHikMKBE8JXtW71TOKbGDjOBC7w/aaIA++UDqc9nmMMLISVNvUeBm4xqDuxg80as0ngJyUsso25689s4OZwkuTQTAmMQ/z5C/bVDDalGiOP7bojm0e6jvcLJ3TmckxNtEMcTxYDzlJhEC87EDQWi1DRz25oRRJ0jvf/oI63IwYgSQPEamUzLYK1WunoXGoFnLlCYAAkWMcUtUH6r5GrzR/7NkEqWQ== augustyip@gmail.com"
 )
 
 ####################
